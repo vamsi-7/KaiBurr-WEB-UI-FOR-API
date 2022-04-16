@@ -1,0 +1,40 @@
+<h2 class="text-center">Creating new data</h2>
+<div class="row">
+    <div class="col-xs-12">
+        <form (ngSubmit)="OnSubmit(f.value)" #f="ngForm">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label for="id">id</label>
+                    <input type="text" class="form-control" id="id" required ngModel name="id" />
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label for="name">name</label>
+                    <input type="text" class="form-control" id="name" required ngModel name="name" />
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label for="description">description</label>
+                    <input type="text" class="form-control" id="description" required ngModel name="description" />
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <br>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-primary" (click)="onclickback()">Back</button>
+                </div>
+            </div>

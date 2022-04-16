@@ -1,0 +1,40 @@
+<h4 class="text-center">Edit data</h4>
+<div class="container">
+    <form #putdata="ngForm" (ngSubmit)="OnSubmit(putdata.value)">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="id">id</label>
+                    <input type="number" id="id" class="form-control" ngModel={{word.id}} name="id">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <label for="name">name</label>
+                <input type="text" id="name" class="form-control" ngModel={{word.name}} name="name">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <label for="description">description</label>
+                <input type="text" id="description" class="form-control" ngModel={{word.description}}
+                    name="description">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="submit" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-primary" (click)="onclickback()">Back</button>
+
+            </div>
